@@ -1,4 +1,9 @@
 '''
+Die Implementierung entspricht der Bearbeitung einer Aufgabe aus:
+Langtangen, Hans Petter(2016): A Primer on Scientific Programming with Python,
+(= Texts in Computational Science and Engineering, Bd. 6),
+Springer: Berlin / Heidelberg, 5. Auflage.
+
 Simuliert wird die Entwicklung eines Vermögens x im Verlauf von n Jahren.
 
 Vom Vermögen geht jedes Jahr ein Betrag zur Lebenshaltung ab, andererseits kommen Zinsen dazu:
