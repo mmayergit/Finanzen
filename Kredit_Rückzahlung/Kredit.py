@@ -31,8 +31,8 @@ def kreditrate(kredit, monate, zinsrate_jahr):
 def main():
     KREDIT = float(input('Wie hoch ist der Kredit? '))
     JAHRE = float(input("Über wie viele Jahre soll der Kredit abbezahlt werden? "))
+    ZINSRATE_JAHR = float(input('Wie groß ist die jährliche Zinsrate in Prozent? '))
     monate = 12*JAHRE
-    ZINSRATE_JAHR = 2.5
     with open('kredit.txt', 'w', encoding='UTF-8') as outfile:
         outfile.write(f"Monat {0:>3d}: Rückzahlung: {0:>8.2f}, Kredit: {KREDIT:>8.2f}\n")
         for monat, betrag, kredit in kreditrate(KREDIT, monate, ZINSRATE_JAHR):
