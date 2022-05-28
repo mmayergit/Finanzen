@@ -1,0 +1,5 @@
+Jahr   0: fortune:  100000.00, consume: 30000.00
+Jahr   1: fortune:   70140.00, consume: 31500.00
+Jahr   2: fortune:   38717.28, consume: 33075.00
+Jahr   3: fortune:    5653.56, consume: 34728.75
+Jahr   4: fortune:  -29133.34, consume: 36465.19
