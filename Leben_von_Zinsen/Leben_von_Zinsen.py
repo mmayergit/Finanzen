@@ -6,7 +6,8 @@ Springer: Berlin / Heidelberg, 5. Auflage.
 
 Simuliert wird die Entwicklung eines Vermögens x im Verlauf von n Jahren.
 
-Vom Vermögen geht jedes Jahr ein Betrag zur Lebenshaltung ab, andererseits kommen Zinsen dazu:
+Vom Vermögen geht jedes Jahr ein Betrag zur Lebenshaltung ab, andererseits kommen Zinsen dazu.
+In diesem Modell bekommt man erst Zinsen für das Vermögen, dann wird das Geld ausgegeben:
 x_n = x_n-1 + p/100*x_n-1 - c_n-1
 Dabei ist x_n das Vermögen nach n Jahren, x_n-1 das Vermögen im Jahr davor, c_n-1 der Verbrauch im Jahr davor und p der Jahreszinssatz in Prozent.
 

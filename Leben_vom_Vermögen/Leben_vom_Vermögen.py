@@ -1,9 +1,9 @@
 '''
 Simuliert wird die Entwicklung eines Vermögens x im Verlauf von n Jahren.
 
-Vom Vermögen geht jedes Jahr ein Betrag zur Lebenshaltung ab, andererseits kommen Zinsen dazu:
-x_n = x_n-1 - c_n-1
-x_n = x_n + x_n*p/100
+Vom Vermögen geht jedes Jahr ein Betrag zur Lebenshaltung ab, andererseits kommen Zinsen dazu.
+In diesem Modell gibt man erst Geld aus, bevor am Ende vom Jahr die Zinsen gutgeschrieben werden.
+x_n = x_n-1 - c_n-1 + p/100*(x_n-1 - c_n-1)
 Dabei ist x_n das Vermögen nach n Jahren, x_n-1 das Vermögen im Jahr davor, c_n-1 der Verbrauch im Jahr davor und p der Jahreszinssatz in Prozent.
 
 Der Verbrauch steigt jedes Jahr durch die Inflation:
@@ -28,8 +28,7 @@ def living_from_fortune(initial_fortune, consume_initial, inflation_loss, intere
     # Simulation
     while fortune_prev >= 0 and year <= 50:
         # Vermögen plus Zinsen minus Verbrauch
-        fortune = fortune_prev - consume_prev
-        fortune += interest*fortune
+        fortune = fortune_prev - consume_prev + interest*(fortune_prev - consume_prev)
         # nächster Verbrauch wächst um Inflation
         consume_prev += inflation*consume_prev
         # Vorbereitung der nächsten Runde
