@@ -3,7 +3,7 @@ Hier wird für verschieden Ausgaben im ersten Jahr ausprobiert,
 wie viele Jahre das Vermögen reicht (muss ja nicht den Erben zufallen...).
 '''
 
-from fortune_and_inflation2 import living_from_fortune
+from Leben_vom_Vermögen_mit_Steuern import living_from_fortune
 import numpy as np
 from fortune_plot import read_file
 import matplotlib.pyplot as plt
